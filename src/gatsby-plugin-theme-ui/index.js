@@ -123,6 +123,20 @@ const theme = merge(tailwind, {
     },
   },
   buttons: {
+    primary: {
+      color: 'background',
+      bg: 'primary',
+      '&:hover': {
+        bg: 'text',
+      }
+    },
+    secondary: {
+      color: 'background',
+      bg: 'secondary',
+      '&:hover': {
+        bg: 'text',
+      }
+    },
     toggle: {
       color: `background`,
       border: `none`,

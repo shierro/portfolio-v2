@@ -7,6 +7,37 @@ import Svg from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
 import Intro from "../sections/intro"
+import Button from "../elements/Button"
+
+const DownloadButton = () => (
+  <div sx={{ pl: 2 }}>
+    <a href="cv.pdf" download target="_blank">
+      <Button 
+        variant="primary" 
+      >
+        Download CV
+      </Button>
+    </a>
+  </div>
+);
+
+const LearnMoreButton = () => (
+  <div>
+    <Button 
+      variant="secondary"
+      onClick={() => document.getElementById("projects").scrollIntoView({ behavior: "smooth" })}
+    >
+      Learn more
+    </Button>
+  </div>
+);
+
+const Actions = () => (
+  <div sx={{ display: 'flex', flexDirection: 'column' }}>
+    <LearnMoreButton />
+    <DownloadButton />
+  </div>
+);
 
 const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
@@ -41,6 +72,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
     <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={offset} factor={factor}>
       <Inner>
         <Intro />
+        <Actions />
       </Inner>
     </Content>
   </div>

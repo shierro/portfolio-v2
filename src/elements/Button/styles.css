@@ -1,0 +1,58 @@
+.btn {
+  display: inline-block;
+  margin: 6px;
+  font-size: inherit;
+  line-height: 1.42;
+  padding: 0.8em 1.2em;
+  font-weight: normal;
+  border-width: 3px;
+  border-style: solid;
+  background: transparent;
+  border-radius: 0.4em;
+  cursor: pointer;
+  font-family: 'Booster Next FY', 'Avenir Next', Avenir, sans-serif;
+  user-select: none;
+  vertical-align: bottom;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s, background-color 0.3s;
+  border-radius: 0.5em 0.6em / 0.6em 1em 3em 1em;
+}
+.btn.btn-disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+.btn.btn-disabled:active {
+  opacity: 0.6;
+}
+.btn:hover {
+  transform: translate(-2px, -2px);
+}
+.btn:active {
+  transition-duration: 0.1s;
+  transform: translate(4px, 4px);
+}
+.btn-primary {
+  color: #f6ad55;
+  border-color: #f6ad55;
+  box-shadow: 6px 0 0 0 #f6ad55, 6px 6px 0 0 #f6ad55, 0 6px 0 0 #f6ad55;
+}
+.btn-primary:hover {
+  box-shadow: 8px 0 0 0 #f6ad55, 8px 8px 0 0 #f6ad55, 0 8px 0 0 #f6ad55;
+}
+.btn-primary:active {
+  background-color: #f6ad55;
+  color: #e6eaef;
+  box-shadow: 2px 0 0 0 #f6ad55, 2px 2px 0 0 #f6ad55, 0 2px 0 0 #f6ad55;
+}
+.btn-secondary {
+  color: #5a67d8;
+  border-color: #5a67d8;
+  box-shadow: 6px 0 0 0 #5a67d8, 6px 6px 0 0 #5a67d8, 0 6px 0 0 #5a67d8;
+}
+.btn-secondary:hover {
+  box-shadow: 8px 0 0 0 #5a67d8, 8px 8px 0 0 #5a67d8, 0 8px 0 0 #5a67d8;
+}
+.btn-secondary:active {
+  background-color: #5a67d8;
+  color: #e6eaef;
+  box-shadow: 2px 0 0 0 #5a67d8, 2px 2px 0 0 #5a67d8, 0 2px 0 0 #5a67d8;
+}
