@@ -33,7 +33,7 @@ const LearnMoreButton = () => (
 );
 
 const Actions = () => (
-  <div sx={{ display: 'flex', flexDirection: 'column' }}>
+  <div sx={{ display: 'flex', flexDirection: 'row' }}>
     <LearnMoreButton />
     <DownloadButton />
   </div>
